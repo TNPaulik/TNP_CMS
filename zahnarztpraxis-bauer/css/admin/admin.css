@@ -1,0 +1,100 @@
+
+
+.sub {
+    list-style-type: none;
+}
+
+.sub a i {
+	margin-left: 15px;
+}
+
+.siteitems {
+    border-top: 2px dotted #000000;
+    margin-bottom: 250px;
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+.siteitems > div {
+    border: 1px solid #000000;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+	min-width: 180px;
+}
+
+.siteitems li {
+    height: 23px;
+    list-style: none outside none;
+}
+
+.siteitems li .btn {
+    margin-bottom: 3px;
+    padding: 0;
+	margin-left: 10px;
+}
+
+
+
+
+
+.placeholder {
+	outline: 1px dashed #4183C4;
+	/*-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: -1px;*/
+}
+
+.mjs-nestedSortable-error {
+	background: #fbe3e4;
+	border-color: transparent;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 30px;
+}
+
+ul.sortable, ul.sortable ul {
+	margin: 0 0 0 25px;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.sortable {
+	margin: 4em 0;
+}
+
+.sortable li {
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.sortable li div  {
+	margin: 0;
+	cursor: move;
+}
+
+.disclose {
+	cursor: pointer;
+	width: 10px;
+	display: none;
+}
+
+.sortable li.mjs-nestedSortable-collapsed > ul {
+	display: none;
+}
+
+.sortable li.mjs-nestedSortable-branch > div > .disclose {
+	display: inline-block;
+}
+
+.sortable li.mjs-nestedSortable-collapsed > div > .disclose > span:before {
+	content: '+ ';
+}
+
+.sortable li.mjs-nestedSortable-expanded > div > .disclose > span:before {
+	content: '- ';
+}

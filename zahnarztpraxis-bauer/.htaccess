@@ -1,0 +1,16 @@
+RewriteEngine on
+#RewriteBase /yii/
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+AddType x-mapp-php5 .php
+AddHandler x-mapp-php5 .php
+
+#AuthType Basic
+#AuthName "Access to /pflegezentrum-moritz"
+#AuthUserFile /kunden/homepages/18/d208733457/htpasswd
+#Require user dasWerkzeug
